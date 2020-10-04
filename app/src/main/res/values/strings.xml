@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="app_name"
+        >SpotSAT</string>
+    <string name="title_activity_search_menu">sad String</string>
+</resources>

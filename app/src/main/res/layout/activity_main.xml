@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/iphone_6__7__8_plus___3__1_" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:src="@drawable/logo"
+        android:id="@+id/logo"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:scrollX="-50dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0"
+        android:textColor="@color/white"
+        android:text="SpotSAT"
+        android:textSize="54sp"
+
+        />
+    <Button
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:id="@+id/login"
+        android:alpha="0"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTage"
+        android:background="@drawable/button_curve"
+        android:text="Sign In"
+        android:textColor="#03112d"
+        android:textSize="27sp"
+        android:lineSpacingExtra="1sp"
+        android:fontFamily="@font/ocra"
+        />
+    <Button
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:id="@+id/guest"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:background="@color/darkBlue"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="15dp"
+        android:text="Guest"
+        android:textColor="#ffffff"
+        android:textSize="27sp"
+        android:lineSpacingExtra="1sp"
+        android:fontFamily="@font/ocra"
+        />
+    <Button
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:id="@+id/signUp"
+        android:alpha="0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guest"
+        android:background="@drawable/bottom_curved"
+        android:layout_marginTop="15dp"
+        android:text="Sign UP"
+        android:textColor="#ffffff"
+        android:textSize="27sp"
+        android:lineSpacingExtra="1sp"
+        android:fontFamily="@font/ocra"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
